@@ -1,0 +1,12 @@
+*{box-sizing:border-box}
+body{margin:0;background:#050507;color:#cfc9c0;font-family:"Segoe Print","Comic Sans MS","Bradley Hand",cursive;display:flex;justify-content:center;align-items:center;min-height:100vh}
+#wrap{position:relative;width:min(100vw,960px)}
+canvas{width:100%;display:block;background:#000;image-rendering:pixelated;border:2px solid #1a1a1f;transition:filter .6s}
+#restartBtn,#muteBtn{position:absolute;top:8px;right:8px;background:#0008;color:#9a948b;border:1px solid #444;padding:4px 10px;font:inherit;font-size:13px;cursor:pointer}
+#restartBtn:hover,#muteBtn:hover,#startBtn:hover{background:#2a2a30;color:#fff}
+#screen{position:absolute;inset:0;background:radial-gradient(#15141a,#030304);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px}
+#screen.hidden{display:none}
+#sTitle{font-size:clamp(28px,6vw,64px);letter-spacing:.3em;margin:0 0 14px;color:#b9b2a6;text-shadow:3px 0 #5a1f2a,-3px 0 #1f4a5a}
+#sText{max-width:640px;line-height:1.6;font-size:clamp(12px,2vw,17px);white-space:pre-line}
+#startBtn{margin-top:18px;background:#16151b;color:#cfc9c0;border:2px solid #666;padding:10px 28px;font:inherit;font-size:18px;cursor:pointer}
+#muteBtn{right:104px}
